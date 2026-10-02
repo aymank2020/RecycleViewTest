@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId 'net.aymanx.examples.recycleview'
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName '0.1-foundation'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release { minifyEnabled false }
+    }
+    testOptions {
+        unitTests.all { maxHeapSize = '128m' }
+    }
+}
+
+tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    // Same Core patch resolved by the validated Contacts-ALL legacy toolchain.
+    implementation 'androidx.core:core:1.0.1'
+    testImplementation 'junit:junit:4.12'
+}
