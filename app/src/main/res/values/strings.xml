@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">معرض الأشكال</string>
+    <string name="local_imagery">صور بأشكال محلية، تعمل دون اتصال بالإنترنت.</string>
+    <string name="horizontal_heading">صف أفقي — اسحب واختر شكلًا</string>
+    <string name="grid_heading">شبكة الصور — الاختيار نفسه في العرضين</string>
+    <string name="selected_photo">المحدد: %1$s</string>
+    <string name="photo_accessibility">اختيار %1$s</string>
+    <string name="selected_photo_accessibility">%1$s، محدد</string>
+    <string name="hide_photos">إخفاء العناصر</string>
+    <string name="show_photos">عرض العناصر</string>
+    <string name="hidden_status">القائمة مخفية، والاختيار محفوظ.</string>
+    <string name="empty_message">لا توجد عناصر معروضة الآن. اضغط «عرض العناصر» لإعادتها.</string>
+</resources>

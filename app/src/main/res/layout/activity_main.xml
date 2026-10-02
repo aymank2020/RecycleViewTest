@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp" android:background="#F4F4ED">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/app_name" android:textSize="25sp" android:textStyle="bold" android:textColor="#174C40" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/local_imagery" android:textSize="13sp" android:layout_marginTop="4dp" />
+    <TextView android:id="@+id/selection" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingTop="8dp" android:textSize="14sp"
+        android:textColor="#174C40" android:accessibilityLiveRegion="polite" />
+    <Button android:id="@+id/toggle_photos" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/hide_photos" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/horizontal_heading" android:textStyle="bold" android:paddingTop="8dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/horizontal_photos"
+        android:layout_width="match_parent" android:layout_height="172dp"
+        android:clipToPadding="false" android:scrollbars="horizontal" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/grid_heading" android:textStyle="bold" android:paddingTop="10dp" android:paddingBottom="4dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/photo_grid"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:clipToPadding="false" android:scrollbars="vertical" />
+    <TextView android:id="@+id/empty_state" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:visibility="gone"
+        android:text="@string/empty_message" android:gravity="center" android:textSize="17sp" />
+</LinearLayout>
